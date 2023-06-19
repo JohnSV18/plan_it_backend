@@ -14,7 +14,7 @@ meetDateRoute.route('/add').post(function (req, res) {
         for (let i=0; i<dateSaved.emails.length; i++) {
             // console.log(req.body.emails[i]);
             // console.log(meetDateModel.meetingNumber)
-            mailer.sendMail(dateSaved.emails[i], dateSaved.meetingNumber);
+            // mailer.sendMail(dateSaved.emails[i], dateSaved.meetingNumber);
         }
         
         return res.status(200).json({'dateSaved': 'Date in added successfully'});
